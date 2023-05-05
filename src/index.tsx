@@ -14,7 +14,7 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: 'Freelancer de website',
+          title: 'Freelance de website',
           type: 'deposit',
           category: 'Dev',
           amount: 6000,
@@ -36,7 +36,7 @@ createServer({
     this.namespace = 'api';
 
     this.get('/transactions', () => {
-      return this.schema.all('transactions')
+      return this.schema.all('transaction')
     });
 
     this.post('/transactions', (schema, request) => {
